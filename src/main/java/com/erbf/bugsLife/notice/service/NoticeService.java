@@ -1,9 +1,10 @@
 package com.erbf.bugsLife.notice.service;
 
-import com.erbf.bugsLife.notice.application.web.NoticeDto;
-
 import java.util.List;
 import java.util.NoSuchElementException;
+
+import com.erbf.bugsLife.notice.application.web.NoticeDto;
+import com.erbf.bugsLife.notice.domain.Notice;
 
 public interface NoticeService {
 	public abstract void NoticeCreate(NoticeDto noticeDto);

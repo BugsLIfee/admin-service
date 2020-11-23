@@ -7,14 +7,18 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum AdminCategory {
 
-	INFO(200,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"),
-	EVENT(201,"ï¿½Ìºï¿½Æ®"),
-	PAYMENT(300,"ï¿½ï¿½ï¿½ï¿½"),
-	POINT(301,"ï¿½ï¿½ï¿½ï¿½Æ®"),
-	HOWTOUSE(302,"ï¿½ï¿½ï¿½ï¿½Æ®ï¿½Ì¿ë¹®ï¿½ï¿½"),
-	BUG(303,"ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½");
+	INFO(200,"°øÁö»çÇ×"),
+	EVENT(201,"ÀÌº¥Æ®"),
+	PAYMENT(300,"°áÁ¦"),
+	POINT(301,"Æ÷ÀÎÆ®"),
+	HOWTOUSE(302,"»çÀÌÆ®ÀÌ¿ë¹®ÀÇ"),
+	BUG(303,"»çÀÌÆ®¹ö±×");
 	
 	private final int code;
 	private final String name;
+	
 
+	
+	
+	
 }
