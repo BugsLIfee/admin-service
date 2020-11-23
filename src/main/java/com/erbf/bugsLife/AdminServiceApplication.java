@@ -19,19 +19,3 @@ public class AdminServiceApplication extends SpringBootServletInitializer {
 	}
 
 }
-////public class BugsLifeApplication extends SpringBootServletInitializer {
-////
-////	public static void main(String[] args) {
-////		final SpringApplicationBuilder builder = new SpringApplicationBuilder(BugsLifeApplication.class);
-////		builder.beanNameGenerator(new CustomBeanNameGenerator());
-////		builder.run(args);
-////		SpringApplication.run(BugsLifeApplication.class, args);
-////	}
-////
-////	@Override
-////	protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationbuilder) {
-////		return applicationbuilder.sources(BugsLifeApplication.class);
-//	}
-//	
-//	
-//}

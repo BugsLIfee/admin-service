@@ -1,5 +1,7 @@
 com/erbf/bugsLife/config/DBRunner.java
  com.erbf.bugsLife.config.DBRunner
+com/erbf/bugsLife/config/SecurityConfig.java
+ com.erbf.bugsLife.config.SecurityConfig
 com/erbf/bugsLife/notice/application/web/NoticeDto.java
  com.erbf.bugsLife.notice.application.web.NoticeDto
  com.erbf.bugsLife.notice.application.web.NoticeDto$NoticeDtoBuilder
@@ -32,9 +34,7 @@ com/erbf/bugsLife/notice/respository/NoticeRepository.java
  com.erbf.bugsLife.notice.respository.NoticeRepository
 com/erbf/bugsLife/config/TokenProvider.java
  com.erbf.bugsLife.config.TokenProvider
-com/erbf/bugsLife/config/WebMvcConfig.java
- com.erbf.bugsLife.config.WebMvcConfig
 com/erbf/bugsLife/AdminServiceApplication.java
  com.erbf.bugsLife.AdminServiceApplication
-com/erbf/bugsLife/config/SecurityConfig.java
- com.erbf.bugsLife.config.SecurityConfig
+com/erbf/bugsLife/config/WebMvcConfig.java
+ com.erbf.bugsLife.config.WebMvcConfig

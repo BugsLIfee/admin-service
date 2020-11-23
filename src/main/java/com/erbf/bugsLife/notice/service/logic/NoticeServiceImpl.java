@@ -1,15 +1,17 @@
 package com.erbf.bugsLife.notice.service.logic;
 
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.erbf.bugsLife.notice.application.web.NoticeDto;
 import com.erbf.bugsLife.notice.domain.Notice;
 import com.erbf.bugsLife.notice.respository.NoticeRepository;
 import com.erbf.bugsLife.notice.service.NoticeService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Optional;
 
 
 @Service
@@ -22,7 +24,7 @@ public class NoticeServiceImpl implements NoticeService {
 	public void NoticeCreate(NoticeDto noticeDto) {
 		noticeRepo.save(Notice.builder()
 				.id(noticeDto.getId())
-				.writerId(noticeDto.getWriterId())
+				.userId(noticeDto.getUserId())
 				.adminCategory(noticeDto.getAdminCategory())
 				.title(noticeDto.getTitle())
 				.content(noticeDto.getContent())
@@ -51,7 +53,7 @@ public class NoticeServiceImpl implements NoticeService {
 	public void NoticeModify(NoticeDto noticeDto) throws NoSuchElementException {
 		noticeRepo.save(Notice.builder()
 				.id(noticeDto.getId())
-				.writerId(noticeDto.getWriterId())
+				.userId(noticeDto.getUserId())
 				.adminCategory(noticeDto.getAdminCategory())
 				.title(noticeDto.getTitle())
 				.content(noticeDto.getContent())
@@ -65,6 +67,4 @@ public class NoticeServiceImpl implements NoticeService {
 	public void NoticeDelete(Long id) throws NoSuchElementException {
 		noticeRepo.deleteById(id);
 	}
-
-	
 }
